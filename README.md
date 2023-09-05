@@ -32,3 +32,11 @@ Pivot tables were utilized to aggregate and summarize the data, enabling easy ex
 
 
 
+
+
+![dashboard_page-0001](https://github.com/divya030/E-Commerce-Sales-Excel-Dashboard-/assets/96876070/f4f7730f-250d-4c01-a712-c02459906b8b)
+
+
+
+
+
