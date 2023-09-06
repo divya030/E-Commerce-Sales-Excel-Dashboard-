@@ -35,6 +35,7 @@ Prior to analysis, the raw data is subjected to a data cleaning process to ensur
 * The revenue is dominated by the product category "Set," which accounts for 49.88% of total revenue, followed by kurta with 27.09% and Western Dress with 14.28%.
 * The top 5 product categories by average price are Set (780), Kurta (427), Western Dress (724), Ethnic Dress (682), and Top (503), indicating that these products are high-value orders.
 * The total number of cancelled and returned orders was 20,428, which represents 15.86% of all orders. Of these, 14.22% were cancelled and 1.64% were returned.
+* Fulfilment by Amazon (FBA) boasts a higher rate of successful deliveries compared to Fulfilment by Merchant (FBM). FBM presents a range of potential issues that can arise during the shipping process, making customers more inclined to opt for stores utilizing FBA over FBM.
 * Around 99% of orders are placed by Regular customers and the remaining by the Business customers.
   
 ## Recommendations
