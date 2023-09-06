@@ -6,15 +6,28 @@ This project focuses on analyzing and visualizing e-commerce sales data from dif
 
 ## Data Cleaning
 
-Prior to analysis, the raw data is subjected to a data cleaning process to ensure accuracy and reliability. This included handling missing values, removing duplicates, and handling Date-time format.
+Prior to analysis, the raw data is subjected to a data cleaning process to ensure accuracy and reliability.
+* Date Range - April 1, 2022 to June 29, 2022
+* Columns to delete
+    Unnamed: 22 - undeterminable data
+    fulfilled-by - only value was amazon courier "easy-ship" with no other relationship
+    ship-country - The shipping Country is India
+    currency - the currency is Indian Rupee (INR)
+    Sales Channel - assumed to be sold through amazon
+* Columns to delete duplicates
+    Order
+    ASIN
+* Columns to handle missing values 
+    Courier Status - will fill missing with 'Unknown'
+    promotion-ids - will fill missing with 'No Promotion'
+    Amount - will fill missing with 0, since 97% of of all Orders with missing Amount are cancelled
+    ship-city - will fill missing with 'Unknown'
+    ship-state- will fill missing with 'Unknown'
+    ship-postal-code - will fill missing with 'Unknown'
+* Columns to Add
+    Promotion status - TRUE for sales promotion, FALSE if there is No promotion to increase sales
+    Customer type - Customer for regular customer, Business for B2B
 
-## Excel Dashboard
-
-An Excel dashboard was created to present key findings and visualizations from the data analysis. The dashboard includes interactive charts, tables, and pivot tables to provide an intuitive and comprehensive view of the data.
-
-## Pivot Tables
-
-Pivot tables were utilized to aggregate and summarize the data, enabling easy exploration and identification of trends. The pivot tables allow for dynamic grouping, filtering, and calculation of metrics, providing valuable insights.
 
 ## Findings
 
