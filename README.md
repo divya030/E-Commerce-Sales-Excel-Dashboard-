@@ -7,28 +7,36 @@ This project focuses on analyzing and visualizing e-commerce sales data from dif
 ## Data Cleaning
 
 Prior to analysis, the raw data is subjected to a data cleaning process to ensure accuracy and reliability.
+Sales Report
 * Date Range - April 1, 2022 to June 29, 2022
 * Columns to delete
-    Unnamed: 22 - undeterminable data
-    fulfilled-by - only value was amazon courier "easy-ship" with no other relationship
-    ship-country - The shipping Country is India
-    currency - the currency is Indian Rupee (INR)
-    Sales Channel - assumed to be sold through amazon
+    * Unnamed: 22 - undeterminable data
+    * fulfilled-by - only value was amazon courier "easy-ship" with no other relationship
+    * ship-country - The shipping Country is India
+    * currency - the currency is Indian Rupee (INR)
+    * Sales Channel - assumed to be sold through amazon
 * Columns to delete duplicates
-    Order
-    ASIN
+    * Order
+    * ASIN
 * Columns to handle missing values 
-    Courier Status - will fill missing with 'Unknown'
-    promotion-ids - will fill missing with 'No Promotion'
-    Amount - will fill missing with 0, since 97% of of all Orders with missing Amount are cancelled
-    ship-city - will fill missing with 'Unknown'
-    ship-state- will fill missing with 'Unknown'
-    ship-postal-code - will fill missing with 'Unknown'
+    * Courier Status - will fill missing with 'Unknown'
+    * promotion-ids - will fill missing with 'No Promotion'
+    * Amount - will fill missing with 0, since 97% of of all Orders with missing Amount are cancelled
+    * ship-city - will fill missing with 'Unknown'
+    * ship-state- will fill missing with 'Unknown'
+    * ship-postal-code - will fill missing with 'Unknown'
 * Columns to Add
-    Promotion status - TRUE for sales promotion, FALSE if there is No promotion to increase sales
-    Customer type - Customer for regular customer, Business for B2B
+    * Promotion status - TRUE for sales promotion, FALSE if there is No promotion to increase sales
+    * Customer type - Customer for regular customer, Business for B2B
 
+Stock
+* Table to create - To calculate stock for each category.
+  
+Competitor
+* Columns to delete
+     * Index - All unique values
 
+  
 ## Findings
 
 * The total revenue for Q2 2022 decreased by -18.77% from April to June, with May revenue experiencing a -9.06% decrease from April, and June revenue seeing a -10.68% decrease from May, which is a cause of concern.
@@ -37,18 +45,22 @@ Prior to analysis, the raw data is subjected to a data cleaning process to ensur
 * The total number of cancelled and returned orders was 20,428, which represents 15.86% of all orders. Of these, 14.22% were cancelled and 1.64% were returned.
 * Fulfilment by Amazon (FBA) boasts a higher rate of successful deliveries compared to Fulfilment by Merchant (FBM). FBM presents a range of potential issues that can arise during the shipping process, making customers more inclined to opt for stores utilizing FBA over FBM.
 * Around 99% of orders are placed by Regular customers and the remaining by the Business customers.
+* The "Kurta" category boasts the largest stock volume among the various categories. The "Bottoms" category has a limited stock quantity.
   
 ## Recommendations
 
 * Promotion to drive interest in the Western Dress category
 * To capture consumer attention, strategies such as bundling purchases or offering a complimentary item from lower-selling categories with relatively lower-priced products (e.g., bottoms, blouses, dupattas) could be employed.
 * Sellers should prioritize efficient delivery methods to ensure customer satisfaction. Understanding fulfillment processes and anticipating potential risks associated with different shipping methods are vital steps to providing a seamless shopping experience. This approach not only bolsters customer trust but also fosters lasting relationships.
+* Employing discount promotions to stimulate sales for items that are beginning to deplete in stock.Implementing bundling promotions such as "Blouses" bundling with highe priced items such as "Western Dresses" will be profitable.
+* It is eveident customers prefer sizes "M","L","XL","XXL","S".The marketing team should prioritize managing inventory for items in these sizes to effectively execute bundling promotions.
+* By researching prices across various stores and understanding ongoing promotions, sellers can adjust their pricing and promotional strategies to remain competitive and compelling in the market.
+
+
+![final_dashboard_page-0001](https://github.com/divya030/E-Commerce-Sales-Excel-Dashboard-/assets/96876070/c25ca1ee-839d-4aa6-96c7-0023027d9569)
 
 
 
-
-
-![dashboard_page-0001](https://github.com/divya030/E-Commerce-Sales-Excel-Dashboard-/assets/96876070/f4f7730f-250d-4c01-a712-c02459906b8b)
 
 
 
